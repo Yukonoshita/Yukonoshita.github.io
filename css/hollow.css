@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*overflow-x: hidden;*/
+}
+
+.bkimg:nth-child(1) {
+    background: url(../hollow/9.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.p {
+    height: 110px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 20%);
+
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 1s;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.pic {
+    height: 70px;
+    width: 70px;
+
+    border-radius: 50%;
+    border: 5px white double;
+    transform-origin: center;
+    transition: all 0.3s;
+
+    position: absolute;
+}
+.slide {
+    position: absolute;
+    top: 225px;
+    left: 575px;
+    height: 110px;
+    width: 25%;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 60%);
+
+    overflow: hidden;
+    transition: all 1s;
+
+}
+.fa {
+    transition: all 1s;
+}
+.form {
+    position: absolute;
+    top: 150px;
+    left: 575px;
+    width: 25%;
+    height: 200px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0%);
+    transition: all 1s;
+
+    justify-content:center;
+    color: rgba(0, 0, 0, 0%);
+}
+.tmp1 {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+.tmp2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.pic:nth-of-type(2):active ~ .slide {
+    transform: translateY(-75px);
+    background-color: rgba(255, 255, 255, 80%);
+}
+.pic:nth-of-type(4):active ~ .slide {
+    transform: translateY(-75px);
+    background-color: rgba(255, 255, 255, 80%);
+}
+.pic:nth-of-type(6):active ~ .slide {
+    transform: translateY(-75px);
+    background-color: rgba(255, 255, 255, 80%);
+}
+.pic:nth-of-type(8):active ~ .slide {
+    transform: translateY(-75px);
+    background-color: rgba(255, 255, 255, 80%);
+}
+.pic:nth-of-type(2):active ~ .form {
+    transform: translateY(95px);
+    background-color: rgba(255, 255, 255, 80%);
+    height: 450px;
+    color: rgba(0, 0, 0, 100%);
+}
+.pic:nth-of-type(4):active ~ .form {
+    transform: translateY(95px);
+    background-color: rgba(255, 255, 255, 80%);
+    height: 450px;
+    color: rgba(0, 0, 0, 100%);
+}
+.pic:nth-of-type(6):active ~ .form {
+    transform: translateY(95px);
+    background-color: rgba(255, 255, 255, 80%);
+    height: 450px;
+    color: rgba(0, 0, 0, 100%);
+}
+.pic:nth-of-type(8):active ~ .form {
+    transform: translateY(95px);
+    background-color: rgba(255, 255, 255, 80%);
+    height: 450px;
+    color: rgba(0, 0, 0, 100%);
+}
+.pic:nth-of-type(2):hover ~ .slide .fa {
+    transform: translateY(-110px);
+}
+.pic:nth-of-type(4):hover ~ .slide .fa {
+    transform: translateY(-220px);
+}
+.pic:nth-of-type(6):hover ~ .slide .fa {
+    transform: translateY(-330px);
+}
+.pic:nth-of-type(8):hover ~ .slide .fa {
+    transform: translateY(-440px);
+}
+.p:nth-of-type(1):hover ~ .slide .fa {
+    transform: translateY(-110px);
+}
+.p:nth-of-type(3):hover ~ .slide .fa {
+    transform: translateY(-220px);
+}
+.p:nth-of-type(5):hover ~ .slide .fa {
+    transform: translateY(-330px);
+}
+.p:nth-of-type(7):hover ~ .slide .fa {
+    transform: translateY(-440px);
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-110px);
+    }
+    50% {
+        transform: translateY(-220px);
+    }
+    75% {
+        transform: translateY(-330px);
+    }
+    100% {
+        transform: translateY(-440px);
+    }
+}
+.s1 {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic1 {
+    height: 70px;
+    width: 70px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: 5px white double;
+    background: url(../hollow/p1.png) no-repeat center;
+    background-size: contain;
+}
+.pic2 {
+    height: 70px;
+    width: 70px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: 5px white double;
+    background: url(../hollow/p2.png) no-repeat center;
+    background-size: contain;
+}
+.pic3 {
+    height: 70px;
+    width: 70px;
+
+    border-radius: 50%;
+    border: 5px white double;
+    background: url(../hollow/p3.png) no-repeat center;
+    background-size: contain;
+}
+.pic4 {
+    height: 70px;
+    width: 70px;
+
+    border-radius: 50%;
+    border: 5px white double;
+    background: url(../hollow/p4.png) no-repeat center;
+    background-size: contain;
+}
+.ff {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 100%);
+    margin-left: 20px;
+}
+/*设置子选项静态属性*/
+.p:nth-of-type(1) {
+    top: 370px;
+    left: 250px;
+}
+.pic:nth-of-type(2) {
+    top: 385px;
+    left: 265px;
+    background: url(../hollow/p1.png) no-repeat center;
+    background-size: contain;
+}
+.p:nth-of-type(3) {
+    top: 510px;
+    left: 250px;
+}
+.pic:nth-of-type(4) {
+    top: 525px;
+    left: 265px;
+    background: url(../hollow/p2.png) no-repeat center;
+    background-size: contain;
+}
+.p:nth-of-type(5) {
+    top: 370px;
+    right: 250px;
+}
+.pic:nth-of-type(6) {
+    top: 385px;
+    right: 265px;
+    background: url(../hollow/p3.png) no-repeat center;
+    background-size: contain;
+}
+.p:nth-of-type(7) {
+    top: 510px;
+    right: 250px;
+}
+.pic:nth-of-type(8) {
+    top: 525px;
+    right: 265px;
+    background: url(../hollow/p4.png) no-repeat center;
+    background-size: contain;
+}
+/* 设置文字 */
+.i1 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0%);
+    font-weight: bold;
+    margin-left: 80px;
+    transition: all 1s;
+}
+.i2 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0%);
+    font-weight: bold;
+    margin-left: 50px;
+    transition: all 1s;
+}
+.i3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0%);
+    font-weight: bold;
+    margin-left: -70px;
+    transition: all 1s;
+}
+.i4 {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0%);
+    font-weight: bold;
+    margin-left: -70px;
+    transition: all 1s;
+}
+/* 设置文本框动画效果*/
+.p:nth-of-type(1):hover{
+    background-color: rgba(255, 255, 255, 60%);;
+}
+.p:nth-of-type(1):hover .i1{
+    color: rgba(0, 0, 0, 60%);;
+}
+.p:nth-of-type(3):hover{
+    background-color: rgba(255, 255, 255, 70%);;
+}
+.p:nth-of-type(3):hover .i2{
+    color: rgba(0, 0, 0, 60%);;
+}
+.p:nth-of-type(5):hover{
+    background-color: rgba(255, 255, 255, 70%);;
+}
+.p:nth-of-type(5):hover .i3{
+    color: rgba(0, 0, 0, 70%);;
+}
+.p:nth-of-type(7):hover{
+    background-color: rgba(255, 255, 255, 70%);;
+}
+.p:nth-of-type(7):hover .i4{
+    color: rgba(0, 0, 0, 60%);;
+}
+/* 设置图标动态效果 */
+.pic:nth-of-type(2):hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+.pic:nth-of-type(4):hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+.pic:nth-of-type(6):hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+.pic:nth-of-type(8):hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.bkimg {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.bkimg:nth-child(2) {
+    background: url(../hollow/1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+}
+.bkimg:nth-child(3) {
+    background: url(../hollow/2.png) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(4) {
+    background: url(../hollow/3.png) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(5) {
+    background: url(../hollow/4.png) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(6) {
+    background: url(../hollow/5.png) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(7) {
+     background: url(../hollow/6.png) no-repeat;
+     background-size: cover;
+}
+.bkimg:nth-child(8) {
+    background: url(../hollow/7.jpg) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(9) {
+    background: url(../hollow/8.png) no-repeat;
+    background-size: cover;
+}
+.bkimg:nth-child(10) {
+    background: url(../hollow/9.png) no-repeat;
+    background-size: cover;
+}
+.font {
+    /*排布*/
+    margin-left: 20%;
+    margin-top: 175px;
+    width: 65%;
+    height: 80px;
+    background-color: rgba(30, 30, 30, 0%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*字体*/
+
+
+    color: rgba(255, 255, 255, 0%);
+    font-size: 55px;
+    font-family: "宋体";
+    font-weight: bold;
+
+    /*动画*/
+}
+.bkimg:not(.bkimg:nth-child(1)):hover .font{
+    animation-name: word1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.bkimg:not(.bkimg:nth-child(1)):hover img{
+    animation: down 1s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+}
+img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    margin-bottom: -450px;
+}
+@keyframes down {
+    0% {
+        transform: translateY(0px);
+    }
+    33% {
+        transform: translateY(-10px);
+    }
+    66% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes word1 {
+    0% {
+        color: rgba(255, 255, 255, 0%);
+        background-color: rgba(0, 0, 0, 0%);
+    }
+    60% {
+        color: white;
+        background-color: rgba(0, 0, 0, 40%);
+    }
+    100% {
+        color: rgba(255, 255, 255, 0%);
+        background-color: rgba(0, 0, 0, 0%);
+    }
+}
