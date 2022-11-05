@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  color: #cccccc;
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-android:before {
+  content: "\e669";
+}
+
+.icon-windows-fill:before {
+  content: "\e882";
+}
+
+.icon-apple:before {
+  content: "\e613";
+}
+

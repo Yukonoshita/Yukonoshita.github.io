@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务器相关介绍</title>
+    <style>
+        @keyframes move1{
+            0%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform:translate3d(-400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(0deg);
+            }
+            75%{
+                transform:translate3d(400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+        @keyframes move2{
+            0%{
+                transform:translate3d(-400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform:translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:translate3d(400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            75%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+        @keyframes move3{
+            0%{
+                transform:translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform:translate3d(400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            75%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(-400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+        @keyframes move4{
+            0%{
+                transform:translate3d(400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            75%{
+                transform:translate3d(-400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+        @keyframes move5{
+            0%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:translate3d(-400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+            75%{
+                transform:translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(400px, 0px, -400px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .backimg{
+            width: 1920px;
+            height: 1080px;
+            position: relative;
+            background-image: url(image1/gbk.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .pic1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            animation: move1 10s infinite;
+            -webkit-perspective: 1300px;
+            
+        }
+        .pic2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            animation: move2 10s infinite;
+            -webkit-perspective: 1300px;
+            
+        }
+        .pic3{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            animation: move3 10s infinite;
+            -webkit-perspective: 1300px;
+            
+        }
+        .pic4{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            animation: move4 10s infinite;
+            -webkit-perspective: 1300px;
+            
+        }
+        .pic5{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            animation: move5 10s infinite;
+            -webkit-perspective: 1300px;
+            
+        }
+        .picbox{
+            transition:all ease;
+            bottom: -30%;    
+            left: 30%;
+            display: inline-block;
+            position: relative;
+            width: 750px;
+            height: 430px;
+            transform-style:preserve-3d;
+            -webkit-perspective: 1300px;
+        }
+        .ch{
+            position: absolute;
+            margin-left: 660px;
+            bottom: 850px;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(255, 235, 121);
+            font-family:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="backimg">
+            <div class="ch"><h1>服务器特色</h1></div>
+                
+            <div class="picbox">
+                <div class="pic1">
+                        <img class="pic1" src="image1/02.jpg">
+                </div>
+                <div class="pic2">
+                        <img class="pic2" src="image1/mainbk2.jpg">
+                </div>
+                <div class="pic3">
+                        <img class="pic3" src="image1/bed.jpg">
+                </div>
+                <div class="pic4">
+                        <img class="pic4" src="image1/sword.jpg">
+                </div>
+                <div class="pic5">
+                        <img class="pic5" src="image1/last.png">
+                </div>
+            </div>
+    
+       
+    </div>
+    
+</body>
+</html>

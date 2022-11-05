@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>至尊之路，我们都在路上</title>
+    <style>
+        @keyframes move{
+            50%{
+                transform:translate3d(0px, 0px, -300px) rotateX(-50deg) rotateY(0deg);
+            }
+            100%{
+                transform:translate3d(0px, 0px, 300px) rotateX(50deg) rotateY(0deg);
+            }
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .bk{
+            background-image: url(image1/bk3.jpeg);
+            background-position: center;
+            background-size: cover;
+            height: 1080px;
+            width: 100%;
+            position: relative;
+            
+            -webkit-perspective: 1300px;
+        }
+        
+        .downloadbut{
+            top: 200px;
+            left: 500px;
+            width: 50%;
+            height: 500px;
+            background-image: url(image1/download.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            transform-style:preserve-3d;
+            position: absolute;
+            -webkit-perspective: 1300px;
+        }
+        .downloadbut:hover{
+            animation: move 2s infinite;
+            cursor: pointer;
+        }
+        .downloadbut a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bk">
+        <div  class="downloadbut">
+            <a href="blank.html" target="_blank"></a>
+        </div>
+    </div>
+</body>
+</html>
